@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .Teleg {
+            color: #000;
+            font-weight: bold;
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .Ads {
+            color: #7243cf;
+            font-style: italic;
+            font-weight: 300;
+            font-size: 25px;
+        }
+
+        .TLogo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: nowrap;
+            gap: 1px;
+            height: 50px;
+            width: 70px;
+            margin-left: 80px;
+            margin-top: 40px;
+            margin-bottom: 177px;
+        }
+
+        .menu-list {
+            width: 281px;
+            height: 235px;
+            margin-left: 61px;
+            margin-bottom: 20px;
+        }
+
+        .mlist {
+            font-size: 25px;
+            color: #000;
+            font-weight: bold 500px;
+
+        }
+
+        .lang-link {
+            color: #7243cf;
+            font-size: 17px;
+            font-weight: 550;
+            margin-left: 80px;
+            margin-bottom: 66px;
+        }
+
+        .authBT {
+            display: flex;
+            width: 302px;
+            height: 74px;
+            background-color: #7243cf;
+            color: rgba(255, 255, 255, 1);
+            margin-left: 61px;
+            border-radius: 100px;
+            align-items: center;
+            justify-content: center;
+            gap: 13px;
+        }
+
+        .authBT-link {
+            font-size: 15px;
+            font-weight: 550;
+        }
+
+        .authBT-icon {
+            margin-top: 7px;
+            width: 24.17px;
+            height: 23px;
+        }
+
+        .hr-line {
+            margin: 4px;
+            width: 297px;
+            height: 2px;
+            background-color: rgba(230, 230, 230, 1);
+
+        }
+
+        .mexit {
+            width: 44px;
+            height: 44px;
+            margin-top: 44px;
+        }
+
+        .menu-head {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .menu-block {
+            width: 768px;
+        }
+
+
+
+        .active-link {
+            position: relative;
+            /* padding-left: 15px; */
+            color: #7243cf;
+        }
+
+        .active-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -35px;
+            height: 100%;
+            width: 5px;
+            background-color: #7243cf;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu-block">
+        <div class="menu-head">
+            <div class="TLogo">
+                <div class="Teleg">TELEG</div>
+                <div class="Ads">ADS</div>
+            </div>
+            <div class="mexit"><img src="C:\Users\Dev\Desktop\Frame.png" alt=""></div>
+        </div>
+        <div class="menu-list">
+            <div class="mlist">О нас</div>
+            <div class="hr-line"></div>
+            <div class="mlist active-link">Преимущества</div>
+            <div class="hr-line"></div>
+
+            <div class="mlist">Сервисы</div>
+            <div class="hr-line"></div>
+
+            <div class="mlist">Контакты</div>
+        </div>
+        <div class="lang-link">
+            <details>
+                <summary>RU</summary>
+                <p>Это скрытый текст.</p>
+            </details>
+        </div>
+        <div class="authBT">
+            <div class="authBT-link">вход / регистрация</div>
+            <div class="authBT-icon"><img src="c:\Users\Dev\Desktop\Add User.png" alt=""></div>
+        </div>
+    </div>
+</body>
+
+</html>

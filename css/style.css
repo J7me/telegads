@@ -1,0 +1,1479 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../HelveticaNeueCyr/helveticaneuecyr_roman.otf') format('otf'),
+        url('../HelveticaNeueCyr/helveticaneuecyr_black.otf') format('otf');
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'HelveticaNeueCyr', sans-serif;
+}
+
+:root {
+    --primary_color: #7243cf;
+    --bg_color: #162831;
+}
+
+body {
+    background-color: white;
+}
+
+
+.container {
+    width: 1296px;
+    max-width: 98%;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    flex-direction: inherit;
+    align-items: inherit;
+}
+
+
+h1,
+h2,
+h3 {
+    font-family: 'HelveticaNeueCyr', sans-serif;
+}
+
+
+
+header {
+    z-index: 999;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.Teleg {
+    color: #000;
+    font-weight: bold;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.Ads {
+    color: #7243cf;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.TLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 1px;
+    height: 50px;
+    width: 70px;
+    margin-left: 20px;
+    margin-right: 10px;
+    font-family: sans-serif;
+}
+
+.lang {
+    color: var(--primary_color);
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.lang img {
+    margin-bottom: 3px;
+}
+
+header {
+    margin-bottom: 150px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    z-index: 99;
+}
+
+header nav a {
+    position: relative;
+    /* Относительное позиционирование */
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header nav a:hover {
+    color: var(--primary_color);
+    /* Цвет текста меняется на красный при наведении */
+}
+
+header nav a::before {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 6px;
+    background-color: var(--primary_color);
+    transition: .3s;
+    position: absolute;
+    /* Абсолютное позиционирование */
+    top: -49px;
+    /* Расстояние от текста до линии */
+    left: 0;
+    /* Линия начинается слева */
+}
+
+header nav li:hover a::before {
+    width: 100%;
+    margin-left: 0%;
+}
+
+.authBT {
+    display: flex;
+    width: 302px;
+    height: 74px;
+    background-color: #7243cf;
+    color: rgba(255, 255, 255, 1);
+    margin-left: 61px;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+}
+
+.authBT-link {
+    font-size: 15px;
+    font-weight: 550;
+}
+
+.authBT-icon {
+    width: 24.17px;
+    height: 23px;
+}
+
+header .primary {
+    width: 302px;
+    height: 74px;
+    background-color: var(--primary_color);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    margin-left: 20px;
+    display: flex;
+}
+
+header .primary:hover {
+    opacity: 0.8;
+    transition: .3s;
+}
+
+.burger {
+    width: 26px;
+    height: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.burger span {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+}
+
+.hr-line {
+    display: none;
+}
+
+.burger .x {
+    display: none;
+}
+
+.startBlock {
+    max-width: 723px;
+    min-width: 200px;
+    max-height: 437px;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 17px;
+    margin-bottom: 93px;
+
+}
+
+.startBlock h1 {
+    font-weight: bold;
+    font-size: 85px;
+
+}
+
+.startBlock p {
+    color: #677488;
+    font-weight: lighter;
+    font-size: 17px;
+    max-width: 565px;
+    margin-bottom: 23px;
+}
+
+.main {
+    max-width: 1024px;
+    margin: 0 auto;
+
+}
+
+.site {
+    padding: 10px;
+
+}
+
+main .show {
+    position: fixed;
+    left: 100%;
+
+}
+
+
+.startNow {
+    width: 281px;
+    height: 90px;
+    border-radius: 125px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+    border: 1px solid var(--primary_color);
+    /* Толщина и цвет рамки */
+    padding-top: 5px;
+}
+
+.startNow span {
+
+    margin-left: 60px;
+    margin-right: 15px;
+    font-size: 15px;
+    color: var(--primary_color);
+}
+
+.startNow .bt {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--primary_color);
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    padding-top: 17px;
+    margin-bottom: 5px;
+
+}
+
+.rating {
+    max-width: 320px;
+    height: 267px;
+    width: 100%;
+    background-color: var(--primary_color);
+    padding: 34px 50px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.rateBlock {
+    display: flex;
+
+    max-width: 1020px;
+    width: 100%;
+    height: 267px;
+
+    justify-content: space-between;
+
+}
+
+.rateBlock span {
+    height: auto;
+    max-width: 200px;
+    width: 100%;
+    font-size: 18px;
+}
+
+.rating h1 {
+    font-size: 55px;
+    font-weight: 300;
+
+}
+
+.bgWhite {
+    background-color: white;
+}
+
+.HWhite {
+    color: white;
+}
+
+.BlockDoveria {
+    margin-top: 110px;
+    display: flex;
+    max-width: 1020px;
+    min-width: 560px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.BlockDoveria span {
+    font-size: 55px;
+    font-weight: 500;
+    color: var(--primary_color);
+    width: 288px;
+    text-align: center;
+}
+
+.partnersBlock {
+    margin-bottom: 175px;
+    display: flex;
+    width: 1020px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    margin-top: 74px;
+}
+
+.partnersCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 245px;
+    height: 143px;
+    background-color: white;
+    border: 1px solid #E1E1E1;
+}
+
+.offersBlock {
+    display: flex;
+    width: 1020px;
+    height: 250px;
+    flex-wrap: wrap;
+}
+
+.offersRegister {
+    display: flex;
+    width: 502px;
+    height: auto;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.imgBlock {
+    max-width: 502px;
+    width: 100%;
+    height: 94px;
+}
+
+.offersRegister .imgBlock img:nth-child(1) {
+    height: 84px;
+    margin-right: 24px;
+    width: 97px;
+}
+
+.offersRegister .imgBlock img:nth-child(2) {
+    margin: 10px;
+    height: 62px;
+    width: 46px;
+}
+
+.offersRegister h1 {
+    width: 360px;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.offersBlock .offersRegister .bt {
+    width: 182px;
+    height: 40px;
+    background-color: var(--primary_color);
+    font-size: 35px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spanReg {
+    max-width: 450px;
+    width: 100%;
+    font-size: 17px;
+    color: #677488;
+    margin-bottom: 10px;
+}
+
+.silver .offersRegister .spanReg {
+    padding-bottom: 140px;
+    padding-right: 150px;
+}
+
+.silver {
+    background-color: #F6F6F6;
+}
+
+.silver .main {
+    padding-top: 79px;
+}
+
+.new {
+    margin-top: 79px;
+    margin-bottom: 130px;
+}
+
+.new .offersRegister .bank {
+    font-size: 17px;
+}
+
+.new .offersRegister .spanReg {
+    font-size: 17px;
+}
+
+.new .offersRegister .imgCash {
+    width: 151px;
+    height: 79px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.startWorking {
+    margin-top: 110px;
+    display: flex;
+    max-width: 1020px;
+    min-width: 560px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 87px;
+}
+
+.startWorking span {
+    font-size: 55px;
+    font-weight: 500;
+    color: var(--primary_color);
+    width: 500px;
+    text-align: center;
+
+}
+
+.circleBlock {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 754px;
+    height: 600px;
+    margin: 0 auto;
+    margin-bottom: 270px;
+}
+
+.circle {
+    width: 384px;
+    height: 384px;
+    border-radius: 100%;
+    border: 1px dashed #7044CC;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 17px;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.circle h2 {
+    font-size: 20px;
+    color: #7044CC;
+}
+
+.circle span {
+    font-size: 17px;
+    color: #677488;
+    width: 263px;
+    text-align: center;
+}
+
+.circle:first-child {
+    margin-right: -14px;
+    z-index: 2;
+
+}
+
+.circle:nth-child(2) {
+    z-index: 1;
+}
+
+.circle:last-child {
+    position: absolute;
+    top: 50%;
+    /* Размещаем по вертикали по центру */
+    left: 50%;
+    /* Размещаем по горизонтали по центру */
+    transform: translate(-50%, 0);
+    /* Центрируем точно */
+    z-index: 3;
+    /* Третий круг поверх всех */
+    margin-top: 23px;
+    /* Сдвигаем вниз для пересечения */
+}
+
+.tg {
+    padding-top: 155px;
+    max-width: 1600px;
+    width: 100%;
+    height: 369px;
+    background-image: url(../img/tg.png);
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.tgBlock {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1020px;
+    width: 100%;
+    height: 250px;
+    flex-wrap: wrap;
+    gap: 167px;
+}
+
+.tgSpan {
+    font-size: 17px;
+    color: white;
+
+}
+
+.TGbt {
+    width: 204px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TGbt span {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.tgRegister {
+    display: flex;
+    width: 352px;
+    height: auto;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.tgRegister h1 {
+    color: white;
+    font-size: 55px;
+    position: relative;
+    top: -15px;
+}
+
+.support {
+    padding: 89px;
+    display: flex;
+
+}
+
+.supportBlock {
+    max-width: 1424px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.help {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 712px;
+    background-image: url(../img/helpbg.png);
+    background-size: cover;
+    height: 626px;
+    gap: 30px;
+
+}
+
+.help h1 {
+    width: 278px;
+    font-size: 55px;
+    font-weight: 600;
+    color: white;
+}
+
+.help span {
+    width: 278px;
+    padding-right: 20px;
+    font-size: 18px;
+    color: white;
+}
+
+.MessBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 716px;
+    height: 626px;
+    background: #EEF4FD;
+    gap: 18px;
+}
+
+.Mess {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    width: 469px;
+    height: 99px;
+    border: 1px solid #A5A5A5;
+
+}
+
+.Mess span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.MessImgBlock {
+    background: #7044CC;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    right: -108px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navBlock {
+    display: flex;
+    max-width: 1024px;
+
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    min-width: 316px;
+    max-width: 510px;
+    width: 100%;
+    gap: 37px;
+    height: 459px;
+}
+
+.nav h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary_color);
+    margin-bottom: 19px;
+}
+
+.navContacts h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary_color);
+    margin-bottom: 19px;
+}
+
+.navContacts h2 {
+    font-size: 45px;
+    font-weight: 500;
+    color: var(--primary_color);
+    margin-bottom: 19px;
+}
+
+.nav span {
+    color: #677488;
+    font-size: 17px;
+}
+
+.navContacts {
+    display: flex;
+    flex-direction: column;
+    min-width: 383px;
+    max-width: 510px;
+    width: 100%;
+    height: 459px;
+
+
+}
+.footer {
+    max-width: 1296;
+    width: 100%;
+    height: 19px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 90px;
+}
+
+.copyright {
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+.made {
+    display: flex;
+}
+.madein {
+    font-size: 25px;
+    color: #BBBBBB;
+    font-weight: bold;
+}
+.madeads {
+    font-size: 25px;
+    color: #BBBBBB;
+    font-weight: 300;
+    font-style: italic;
+}
+@media screen and (max-width: 975px) {
+    .tg {
+        padding-top: 123px;
+        max-width: 968px;
+        width: 100%;
+        height: 369px;
+        background-image: url(../img/tgbg2.png);
+        background-size: cover;
+        margin: 0 auto;
+        display: flex;
+
+    }
+
+    .help h1 {
+        width: 392px;
+        font-size: 35px;
+        font-weight: 600;
+        color: white;
+    }
+
+    .help span {
+        width: 280px;
+        padding-right: 20px;
+        font-size: 18px;
+        color: white;
+    }
+
+    .help {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 716px;
+        background-image: url(../img/helpm.png);
+        background-size: cover;
+        height: 384px;
+        gap: 16px;
+        text-align: center;
+        padding-top: 100px;
+
+    }
+
+    .support {
+        padding: 22px;
+        display: flex;
+
+    }
+
+    .supportBlock {
+        max-width: 1424px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .tgBlock {
+        gap: 0;
+    }
+
+    .tgRegister h1 {
+        color: white;
+        font-size: 35px;
+        position: relative;
+        top: -15px;
+    }
+
+    .circle {
+        width: 366px;
+        height: 366px;
+    }
+
+    .circle:last-child {
+        margin-top: 7px;
+    }
+
+    .startWorking {
+        margin-top: 0px;
+        display: flex;
+        max-width: 1020px;
+        min-width: 560px;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .startWorking span {
+        font-size: 55px;
+        font-weight: 500;
+        color: var(--primary_color);
+        width: 500px;
+        text-align: center;
+    }
+
+    .offersBlock {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 1024px;
+        min-width: 718px;
+        width: 100%;
+        height: 250px;
+        flex-wrap: wrap;
+    }
+
+    .offersRegister {
+        display: flex;
+        width: 355px;
+        height: auto;
+    }
+
+    .silver .offersRegister .spanReg {
+        padding-bottom: 140px;
+        padding-right: 30px;
+    }
+
+    .partnersCards {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+        max-width: 231px;
+        height: 135px;
+        width: 100%;
+        background-color: white;
+        border: 1px solid #E1E1E1;
+    }
+
+    .partnersBlock {
+        margin-bottom: 156px;
+        flex-wrap: wrap;
+        display: flex;
+        max-width: 1020px;
+        min-width: 719px;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        gap: 13px;
+        margin-top: 74px;
+    }
+
+
+
+    .main {
+
+        display: flex;
+        flex-direction: column;
+        /* gap: 100px; */
+    }
+
+
+    header .lang {
+        position: fixed;
+        left: 100%;
+        /* Скрываю кнопку, скидывая за рамки */
+    }
+
+    header .lang.show {
+        position: fixed;
+        margin-top: 900px;
+        left: 0%;
+        /* возвращаю кнопку */
+        margin-left: 31px;
+    }
+
+    main.show {
+        position: fixed;
+        left: 100%;
+    }
+
+    .silver.show {
+        position: fixed;
+        left: 100%;
+    }
+
+    .silver.bottom {
+        position: fixed;
+        left: 100%;
+    }
+
+    .TLogo {
+        margin-left: 50px;
+        margin-right: 10px;
+    }
+
+
+    header .primary.show {
+        position: fixed;
+        margin-top: 1200px;
+    }
+
+    .hr-line {
+        display: block;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        width: 297px;
+        height: 2px;
+        background-color: rgba(230, 230, 230, 1);
+    }
+
+    header nav a::before {
+        content: '';
+        display: block;
+        width: 6px;
+        /* Толщина вертикальной линии */
+        height: 0;
+        /* Начальная высота линии */
+        background-color: var(--primary_color);
+        transition: .3s;
+        position: absolute;
+        top: 50%;
+        /* Центрируем линию по вертикали относительно текста */
+        left: -30px;
+        /* Расстояние от текста до линии слева */
+        transform: translateY(-50%);
+        /* Корректируем центрирование */
+        /* Расстояние от текста до линии слева */
+    }
+
+    header nav li:hover a::before {
+        height: 100%;
+        /* Линия растягивается на всю высоту текста */
+        width: 6px;
+    }
+
+    header nav ul {
+        position: fixed;
+        left: 0;
+        top: 0;
+        padding-left: 30px;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        left: 100%;
+
+        transition: .3s;
+        gap: 1px;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    header nav ul.show {
+        left: 0%;
+        top: -320px;
+
+
+    }
+
+    .burger {
+        display: flex;
+        z-index: 99;
+        margin-right: 60px;
+    }
+
+    .burger span {
+        transition: .3s;
+        width: 39px;
+        height: 4px;
+    }
+
+    .burger span:nth-child(2) {
+        width: 58px;
+    }
+
+    .burger.show span:nth-child(1) {
+        width: 0;
+    }
+
+    .burger.show span:nth-child(2) {
+        width: 0%;
+    }
+
+    .burger.show span:nth-child(3) {
+        width: 0%;
+    }
+
+    .burger.show .x {
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+
+    .startBlock h1 {
+        font-size: 55px;
+    }
+
+    .startBlock {
+        max-width: 513px;
+        width: 100%;
+        height: 235px;
+        margin-left: 20px;
+
+    }
+
+    .rating {
+        max-width: 259px;
+        height: 249px;
+        width: 100%;
+        background-color: var(--primary_color);
+        padding: 34px 20px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .rateBlock span {
+        height: auto;
+        max-width: 200px;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .rateBlock {
+        margin-top: 109px;
+    }
+
+    .rating h1 {
+        font-size: 35px;
+        font-weight: 300;
+    }
+
+    .bgWhite {
+        background-color: white;
+    }
+
+    .HWhite {
+        color: white;
+    }
+
+}
+
+@media screen and (max-width: 533px) {
+    .footer {
+        padding: 5%;
+            display: flex;
+            flex-direction: column;
+            gap: 63px;
+            margin-bottom: 204px;
+        }
+    .navBlock {
+        display: flex;
+        max-width: 340px;
+        flex-wrap: wrap;
+        padding: 5%;
+    }
+
+    .navContacts h2 {
+        font-size: 25px;
+        font-weight: 500;
+        color: var(--primary_color);
+        margin-bottom: 19px;
+    }
+
+    .navContacts {
+        display: flex;
+        flex-direction: column;
+        min-width: 343px;
+        max-width: 510px;
+        width: 100%;
+        height: 139px;
+
+
+    }
+
+    .MessBlock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 340px;
+        height: 422px;
+        background: white;
+        gap: 18px;
+    }
+
+    .Mess {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+        width: 340px;
+        height: 99px;
+        border: 1px solid #A5A5A5;
+
+    }
+
+    .Mess span {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .MessImgBlock {
+        background: #7044CC;
+        width: 80px;
+        height: 80px;
+        position: relative;
+        right: -44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .site {
+        padding: 5px;
+    }
+
+    .help h1 {
+        width: 254px;
+        font-size: 35px;
+        font-weight: 600;
+        color: white;
+    }
+
+    .help span {
+        width: 280px;
+        padding-right: 20px;
+        font-size: 18px;
+        color: white;
+    }
+
+    .help {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 340px;
+        background-image: url(../img/helpn.png);
+        background-size: cover;
+        height: 527px;
+        gap: 16px;
+        text-align: center;
+        padding-top: 100px;
+
+    }
+
+    .support {
+        padding-top: 20px;
+        display: flex;
+
+    }
+
+    .supportBlock {
+        margin: 0 auto;
+        max-width: 340px;
+        width: 100%;
+        position: relative;
+
+    }
+
+    .tgBlock {
+        display: flex;
+        text-align: center;
+        padding-top: 177px;
+    }
+
+    .TGbt {
+        margin: 0 auto;
+    }
+
+    .tg {
+        max-width: 340px;
+        width: 100%;
+        height: 527px;
+        background-size: cover;
+        background-image: url(../img/tgmob.png);
+
+    }
+
+    .tgSpan {
+        font-size: 15px;
+        color: white;
+        width: 315px;
+
+    }
+
+    .circleBlock {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 360px;
+        height: auto;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        margin-bottom: 420px;
+    }
+
+    .circle {
+        width: 344px;
+        height: 344px;
+    }
+
+    .circle:nth-child(2) {
+        top: -37px;
+        z-index: 1;
+    }
+
+    .circle:last-child {
+        top: 610px;
+    }
+
+    .startWorking {
+        margin-top: 138px;
+        display: flex;
+        max-width: 380px;
+        min-width: 320px;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .startWorking span {
+        font-size: 35px;
+        font-weight: 300;
+        color: var(--primary_color);
+        width: 170px;
+        text-align: center;
+    }
+
+    .new .offersRegister h1 {
+        width: 250px;
+    }
+
+    .site.silver {
+        height: 200px;
+        margin-top: 200px;
+        background-color: white;
+        padding-bottom: 379px;
+    }
+
+    .site.silver .offersBlock {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 38px;
+        min-width: 380px;
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+
+    }
+
+    .offersBlock {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 38px;
+        min-width: 350px;
+        width: 100%;
+        height: 250px;
+        flex-wrap: wrap;
+    }
+
+    .offersRegister {
+        display: flex;
+        width: 355px;
+        height: auto;
+    }
+
+    .partnersCards {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+        min-width: 336px;
+        height: 197px;
+        width: 100%;
+        background-color: white;
+        border: 1px solid #E1E1E1;
+    }
+
+    .partnersBlock {
+        margin-bottom: 106px;
+        flex-wrap: wrap;
+        display: flex;
+
+        min-width: 360px;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        gap: 13px;
+        margin-top: 74px;
+    }
+
+    .BlockDoveria {
+        margin-top: 346px;
+        display: flex;
+        max-width: 380px;
+        min-width: 320px;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .BlockDoveria span {
+        font-size: 35px;
+        font-weight: 300;
+        color: var(--primary_color);
+        width: 288px;
+        text-align: center;
+    }
+
+    .rating {
+        min-width: 199px;
+        height: 165px;
+        width: 100%;
+        background-color: white;
+        color: #000;
+        padding: 34px 20px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .rateBlock {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1020px;
+        width: 100%;
+        height: 267px;
+
+        justify-content: space-between;
+
+    }
+
+    .rating h1 {
+        font-size: 35px;
+        font-weight: 300;
+        color: var(--primary_color);
+    }
+
+    .startBlock h1 {
+        font-size: 35px;
+        max-width: 190px;
+        width: 100%;
+
+    }
+
+    .rateBlock span {
+        height: auto;
+        font-size: 15px;
+        max-width: 199px;
+        width: 100%;
+
+    }
+
+    .bgWhite {
+        background-color: white;
+    }
+
+
+
+    .startBlock {
+        max-width: 343px;
+        width: 100%;
+        height: 235px;
+        margin-left: 20px;
+    }
+
+    .startBlock p {
+        font-size: 15px;
+        max-width: 379px;
+        width: 100%;
+    }
+
+    header .primary {
+        position: fixed;
+        left: 100%;
+        /* Скрываю кнопку, скидывая за рамки */
+    }
+
+    header .primary.show {
+        position: fixed;
+        margin-top: 1200px;
+        left: 0%;
+        margin-left: 28px;
+        /* возвращаю кнопку */
+    }
+
+    header .lang {
+        position: fixed;
+        left: 100%;
+        /* Скрываю кнопку, скидывая за рамки */
+    }
+
+    header .lang.show {
+        position: fixed;
+        margin-top: 900px;
+        left: 0%;
+        /* возвращаю кнопку */
+        margin-left: 31px;
+    }
+
+    .offersRegister .imgBlock img:nth-child(1) {
+        height: 78px;
+        margin-right: 24px;
+        width: 97px;
+    }
+
+    .offersRegister .imgBlock img:nth-child(2) {
+        margin: 10px;
+        height: 62px;
+        width: 46px;
+    }
+}
