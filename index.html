@@ -1,237 +1,280 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <meta http-equiv="Cache-Control" content="no-store">
     <title>Акватерапия</title>
+    <script src="./lib/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js" defer></script>
+    <link rel="stylesheet" href="./lib/swiper-bundle.min.css">
 </head>
 
 <body>
     <header>
         <div class="container">
-            <div class="TLogo">
-                <div class="Teleg">TELEG</div>
-                <div class="Ads">ADS</div>
-            </div>
-            <div class="lang">RU &nbsp; <img src="img/lang.png" alt=""></div>
+            <div class="logo"></div>
             <nav>
-                <ul>
-                    <li><a href="">О нас</a></li>
-                    <li class="hr-line"></li>
-                    <li><a href="">Преимущества</a></li>
-                    <li class="hr-line"></li>
-                    <li><a href="">Сервисы</a></li>
-                    <li class="hr-line"></li>
-                    <li><a href="">Контакты</a></li>
-
+                <ul onclick="toggleMenu()">
+                    <li><a href="#main">Главная</a></li>
+                    <li><a href="seanses.html">Сеансы</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="blog.html">Блог</a></li>
                 </ul>
             </nav>
-            <div class="primary">
-                <div class="authBT-link">вход / регистрация</div>
-                <div class="authBT-icon">
-                    <img src="img/AddUser.png" alt="">
-                </div>
-            </div>
+            <button class="primary">Записаться на сеанс</button>
             <div class="burger" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
-                <img class="x" src="img/x.png" alt="">
             </div>
         </div>
     </header>
-    <main class="content">
-        <div class="site">
-            <div class="main">
-                <div class="startBlock">
-                    <h1>Эффективная реклама
-                        в Telegram</h1>
-                    <p>Мы помогаем найти целевую аудиторию в Telegram и запускать эффективные рекламные кампании</p>
-                    <div class="startNow">
-                        <span>Начать сейчас</span>
-                        <div class="bt"><img src="img/ArrowRightCircle.png" alt=""></div>
-                    </div>
-                </div>
-                <div class="rateBlock">
-                    <div class="rating bgWhite">
-                        <h1>207 228</h1>
-                        <span>успешно реализованных заказов
-                        </span>
-                    </div>
-                    <div class="rating HWhite">
-                        <h1>7 754</h1>
-                        <span>каналов, проверенных вручную</span>
-                    </div>
-                    <div class="rating bgWhite">
-                        <h1>460 482</h1>
-                        <span>успешно реализованных заказов
-                        </span>
-                    </div>
-                </div>
-                <div class="BlockDoveria"><span>Нам доверяют</span></div>
-
-                <div class="partnersBlock">
-                    <div class="partnersCards"><img src="img/akar-icons_google-fill.png" alt=""></div>
-                    <div class="partnersCards"><img src="img/cib_yandex.png" alt=""></div>
-                    <div class="partnersCards"><img src="img/bxl_visa.png" alt=""></div>
-                    <div class="partnersCards"><img src="img/bxl_mastercard.png" alt=""></div>
-                </div>
-                <div class="offersBlock">
-                    <div class="offersRegister">
-                        <div class="imgBlock">
-                            <img src="img/01.png" alt=""><img src="img/chel.png" alt="">
-                        </div>
-                        <h1>Регистрируйте аккаунт</h1>
-                    </div>
-                    <div class="offersRegister">
-                        <span class="spanReg">Пройдите быструю регистрацию чтобы активировать аккаунт.</span>
-                        <div class="bt">
-                            регистрация
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-        <div class="site silver">
-            <div class="main">
-                <div class="offersBlock">
-
-                    <div class="offersRegister">
-                        <span class="spanReg">Выберите подходящие каналы
-                            в каталоге</span>
-
-                    </div>
-                    <div class="offersRegister">
-                        <div class="imgBlock">
-                            <img src="img/02.png" alt=""><img src="img/channel.png" alt="">
-                        </div>
-                        <h1>Каталог каналов</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="site bottom">
-            <div class="main">
-                <div class="offersBlock new">
-                    <div class="offersRegister">
-                        <div class="imgBlock">
-                            <img src="img/03.png" alt=""><img src="img/cash.png" alt="">
-                        </div>
-                        <h1>Пополните баланс</h1>
-                    </div>
-                    <div class="offersRegister">
-                        <span class="spanReg">Пополните баланс
-                            удобным способом:
-                        </span>
-                        <span class="bank">
-                            Visa/MasterCard/МИР, Qiwi
-                            Банковский перевод</span>
-
-                        <div class="imgCash">
-                            <img src="img/bxl_visa2.png" alt="">
-                            <img src="img/bxl_mastercard2.png" alt="">
-                        </div>
-                    </div>
-
-                </div>
-                <div class="startWorking"><span>Начните работать
-                        с нами</span>
-                </div>
-                <div class="circleBlock">
-                    <div class="circle">
-                        <h2>Рекламодателям</h2><img src="img/line.png" alt=""><span>Продвигайте свой бизнес с помощью
-                            эффективной рекламы в Telegram</span>
-                    </div>
-                    <div class="circle">
-                        <h2>Администраторам</h2><img src="img/line.png" alt=""><span>Зарабатывайте деньги на размещении
-                            рекламы в своих каналах и группах</span>
-                    </div>
-                    <div class="circle">
-                        <h2>Агентствам</h2><img src="img/line.png" alt=""><span>Telegram – новый маркетинговый канал для
-                            ваших клиентов</span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="site tg">
-            <div class="main">
-                <div class="tgBlock">
-                    <div class="tgRegister">
-
-                        <h1>Регистрация</h1>
-                    </div>
-                    <div class="tgRegister">
-                        <span class="tgSpan">Создайте аккаунт через Telegram всего за пару кликов</span>
-                        <div class="TGbt">
-                            <span>Создать аккаунт</span>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="site support">
-            <div class="supportBlock">
-                <div class="help">
-                    <h1>Возникли вопросы?</h1>
-                    <span>Напишите нам и ответим Вам
-                        в ближайшее время</span>
-                </div>
-                <div class="MessBlock">
-                    <div class="Mess"><span>Написать в Вконтакте</span><span class="MessImgBlock"><img
-                                src="./img/bx_bxl-vk.png" alt=""></span></div>
-                    <div class="Mess"><span>Написать в Facebook</span><span class="MessImgBlock"><img
-                                src="./img/ant-design_facebook-filled.png" alt=""></span></div>
-                    <div class="Mess"><span>Написать в Telegram</span><span class="MessImgBlock"><img
-                                src="./img/bx_bxl-telegram.png" alt=""></span></div>
-                </div>
-            </div>
-        </div>
-        <div class="site">
-            <div class="main">
-                <div class="navBlock">
-                    <div class="nav">
-                        <h1>Навигация</h1>
-                        <span>Каталог каналов</span>
-                        <span>Статьи</span>
-                        <span>Рекламодателям</span>
-                        <span>Администраторам</span>
-                        <span>Агентствам</span>
-                        <span>Реферальная программа</span>
-
-                    </div>
-                    <div class="navContacts">
-                        <h1>Связь с нами</h1>
-                        <h2>support@adgram.io</h2>
-                    </div>
-                </div>
-                <hr>
-                <div class="footer">
-
-                    <div class="copyright">©TYelegards 2022</div>
-                    <div class="made">
-                        <div class="madein">TELEG</div>
-                        <div class="madeads">ADS</div>
-                    </div>
-                </div>
-
+    <main id="main">
+        <div class="container">
+            <div class="banner">
+                <h2>Укрепление здоровья</h2>
+                <h1>Акватория RithmStyle</h1>
             </div>
         </div>
     </main>
+    <section id="seanses">
+        <h2>Сеансы RitmStyle</h2>
+        <div class="content">
+            <div class="container">
+                <div class="gallery">
+                    <div class="item">
+                        <h3>Стандартный RitmStyle </h3>
+                        <img src="img/bassein.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <h3>RitmStyle для пар</h3>
+                        <img src="img/bassein.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <h3>RitmStyle с полным погружением под воду</h3>
+                        <img src="img/bassein.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <h3>RitmStyle для беременных</h3>
+                        <img src="img/bassein.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <h3>RitmStyle + красочная подводная фотосессия</h3>
+                        <img src="img/bassein.jpg" alt="">
+                    </div>
 
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="reviews">
+        <h2>Отзывы</h2>
+        <div class="content">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="review">
+                            <h3>Катя Иванова</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quia eveniet,
+                                explicabo
+                                ex expedita dolore mollitia ducimus distinctio voluptatibus exercitationem accusamus
+                                commodi<br><br>s
+                                possimus ratione corporis? Mollitia, voluptatum debitis quam sequi beatae earum?
+                                Corporis
+                                cumque quos praesentium molestias eos ut voluptate, iure tempore laborum laudantium
+                                voluptas, deserunt sint quod voluptatem. Reprehenderit!</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-active">
+                        <div class="review">
+                            <h3>Катя Иванова</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quia eveniet,
+                                explicabo
+                                ex expedita dolore mollitia ducimus distinctio voluptatibus exercitationem accusamus
+                                commodi<br><br>s
+                                possimus ratione corporis? Mollitia, voluptatum debitis quam sequi beatae earum?
+                                Corporis
+                                cumque quos praesentium molestias eos ut voluptate, iure tempore laborum laudantium
+                                voluptas, deserunt sint quod voluptatem. Reprehenderit!</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review">
+                            <h3>Катя Иванова</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quia eveniet,
+                                explicabo
+                                ex expedita dolore mollitia ducimus distinctio voluptatibus exercitationem accusamus
+                                commodi<br><br>s
+                                possimus ratione corporis? Mollitia, voluptatum debitis quam sequi beatae earum?
+                                Corporis
+                                cumque quos praesentium molestias eos ut voluptate, iure tempore laborum laudantium
+                                voluptas, deserunt sint quod voluptatem. Reprehenderit!</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review">
+                            <h3>Катя Иванова</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quia eveniet,
+                                explicabo
+                                ex expedita dolore mollitia ducimus distinctio voluptatibus exercitationem accusamus
+                                commodi<br><br>s
+                                possimus ratione corporis? Mollitia, voluptatum debitis quam sequi beatae earum?
+                                Corporis
+                                cumque quos praesentium molestias eos ut voluptate, iure tempore laborum laudantium
+                                voluptas, deserunt sint quod voluptatem. Reprehenderit!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h2>Об RitmStyle</h2>
+        <div class="content">
+            <div class="container">
+                <div class="item">
+                    <div class="desc">
+                        <h3>RitmStyle массаж</h3>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in purus, sed tellus eget
+                            mattis nibh quam. Eu ornare
+                            nunc, id est. Erat consectetur etiam a sit diam in imperdiet amet. Diam nisl, ipsum suscipit
+                            amet. Eleifend amet
+                            habitasse proin quis adipiscing.
+                            <br><br>
+                            Nisl convallis mauris in consequat. Sit ac vitae posuere maecenas dictumst quam. Felis amet
+                            diam, non augue massa.
+                            Egestas molestie lobortis rhoncus, elit nulla nisl. Habitant tortor at tempor.
+                        </p>
+                    </div>
+                    <img src="../1 сайт/img/bassein.jpg" alt="">
+
+                </div>
+                <div class="item">
+                    <div class="desc">
+                        <h3>RitmStyle массаж</h3>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in purus, sed tellus eget
+                            mattis nibh quam. Eu
+                            ornare
+                            nunc, id est. Erat consectetur etiam a sit diam in imperdiet amet. Diam nisl, ipsum suscipit
+                            amet. Eleifend
+                            amet
+                            habitasse proin quis adipiscing.
+                            <br><br>
+                            Nisl convallis mauris in consequat. Sit ac vitae posuere maecenas dictumst quam. Felis amet
+                            diam, non augue
+                            massa.
+                            Egestas molestie lobortis rhoncus, elit nulla nisl. Habitant tortor at tempor.
+                        </p>
+                    </div>
+                    <img src="../1 сайт/img/bassein.jpg" alt="">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="prices">
+        <h2>Стоимость сеансов</h2>
+        <div class="content">
+
+            <div class="container">
+                <ul>
+                    <li><span class="desc">RitmStyle с погружением</span>
+                        <span class="price">1000р.</span>
+                    </li>
+                    <li><span class="desc">Абонемент на RitmStyle</span>
+                        <span class="price">5500р.</span>
+                    </li>
+                    <li><span class="desc">RitmStyle для пар</span>
+                        <span class="price">6000р.</span>
+                    </li>
+                    <li><span class="desc">RitmStyle для беременных</span>
+                        <span class="price">13500р.</span>
+                    </li>
+                    <li><span class="desc">RitmStyle + фотосессия</span>
+                        <span class="price">11500р.</span>
+                    </li>
+                </ul>
+                <div class="sertificate">
+                    <img src="./img/thanks.png" alt="сертификат">
+                    <span>Подарочный сертификат</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contacts">
+        <div class="content">
+            <div class="container">
+
+                <div class="map"><iframe
+                        src="https://yandex.ru/map-widget/v1/?ll=4.894406%2C52.379690&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoyMjI4MjYxMjUxEjRLb25pbmtyaWprIGRlciBOZWRlcmxhbmRlbiwgTm9vcmQtSG9sbGFuZCwgQW1zdGVyZGFtIgoNW56cQBX7hFFC&z=19.66"
+                        width="560" height="400" style="position:relative;"></iframe></div>
+                <div class="addresses">
+                    <div class="address">
+                        <h4>Бассейн WorkClass</h4>
+                        <div class="desc">
+                            <span>
+                                <span class="icon geo"></span>
+                                Невский 140
+                            </span>
+                            <span>
+                                <span class="icon metro"></span>
+                                м. Спасская
+                            </span>
+                            <span>
+                                <span class="icon shuddle"></span>
+                                Запись по договоренности
+                            </span>
+                        </div>
+                        <button class="secondary">Записаться на сеанс</button>
+                    </div>
+                    <div class="address">
+                        <h4>Бассейн "На Гороховой"</h4>
+                        <div class="desc">
+                            <span>
+                                <span class="icon geo"></span>
+                                3-й проезд Иванова
+                            </span>
+                            <span>
+                                <span class="icon metro"></span>
+                                м. Крестовский остров
+                            </span>
+                            <span>
+                                <span class="icon shuddle"></span>
+                                Запись по договоренности
+                            </span>
+                        </div>
+                        <button class="secondary">Записаться на сеанс</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <div class="container">
+            <div class="copyright">© 2018-2022 RitmStyle</div>
+            <div class="madein">Сделано d-e-n.info</div>
+        </div>
+    </div>
     <script>
         function toggleMenu() {
             document.querySelector('header nav ul').classList.toggle('show');
             document.querySelector('.burger').classList.toggle('show');
-            document.querySelector('header .primary').classList.toggle('show');
-            document.querySelector('header .lang').classList.toggle('show');
-            document.querySelector('main').classList.toggle('show');
 
         }
     </script>
